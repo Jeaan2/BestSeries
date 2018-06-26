@@ -6,9 +6,60 @@
     Title="{Binding Title}"
     x:Class="BestSeries.Views.MainView">
     <ContentPage.Content>
-        <Label HorizontalTextAlignment="Center"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Text="aaaaa"/>
+        <Grid
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="*"/>
+            </Grid.RowDefinitions>
+            <ListView
+                Grid.Row="0"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                HorizontalOptions="FillAndExpand"
+                ItemsSource="{Binding Items}"
+                SeparatorVisibility="None"
+                CachingStrategy="RecycleElement"
+                behaviors:AttachedItemTappedBehavior.Command="{Binding ItemClickCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid
+                                HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition
+                                        Width="Auto" />
+                                    <ColumnDefinition
+                                        Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition
+                                        Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Image
+                                    Grid.Column="0"
+                                    Grid.Row="0"
+                                    VerticalOptions="CenterAndExpand"
+                                    HeightRequest="40"
+                                    WidthRequest="40"
+                                    Source="{Binding PosterPath}" />
+                                <Label
+                                    Grid.Column="1"
+                                    Grid.Row="0"
+                                    VerticalOptions="CenterAndExpand"
+                                    Text="{Binding Name}" />
+                                </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </Grid>
+        
     </ContentPage.Content>
 </ContentPage>

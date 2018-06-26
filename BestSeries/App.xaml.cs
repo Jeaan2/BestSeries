@@ -1,4 +1,6 @@
 using System;
+using BestSeries.Services.Navigation;
+using BestSeries.ViewModels.Base;
 using BestSeries.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,23 +13,19 @@ namespace BestSeries
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainView();
+            BuildDependencies();
+            InitNavigation();
         }
 
-        protected override void OnStart()
+        public void BuildDependencies()
         {
-            // Handle when your app starts
+            ViewModelLocator.Instance.Build();
         }
 
-        protected override void OnSleep()
+        async void InitNavigation()
         {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
+            var navigationService = ViewModelLocator.Instance.Resolve<INavigationService>();
+            await navigationService.InitializeAsync();
         }
     }
 }

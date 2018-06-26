@@ -985,11 +985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.Android/BestSeries.Android.csproj",
+      "projectUniqueName": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries.Android/BestSeries.Android.csproj",
       "projectName": "BestSeries.Android",
-      "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.Android/BestSeries.Android.csproj",
+      "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries.Android/BestSeries.Android.csproj",
       "packagesPath": "/Users/jeancarlodasilva/.nuget/packages/",
-      "outputPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.Android/obj",
+      "outputPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries.Android/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jeancarlodasilva/.config/NuGet/NuGet.Config"
@@ -1003,8 +1003,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/BestSeries.csproj": {
-              "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/BestSeries.csproj"
+            "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.csproj": {
+              "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.csproj"
             }
           }
         }

@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/BestSeries.csproj",
+      "projectUniqueName": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.csproj",
       "projectName": "BestSeries",
-      "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/BestSeries.csproj",
+      "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.csproj",
       "packagesPath": "/Users/jeancarlodasilva/.nuget/packages/",
-      "outputPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/obj",
+      "outputPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -737,13 +737,13 @@
             "target": "Package",
             "version": "3.0.0.482510"
           },
-          "Autofac": {
-            "target": "Package",
-            "version": "4.8.1"
-          },
           "Refit": {
             "target": "Package",
             "version": "4.6.16"
+          },
+          "Autofac": {
+            "target": "Package",
+            "version": "4.8.1"
           }
         },
         "imports": [

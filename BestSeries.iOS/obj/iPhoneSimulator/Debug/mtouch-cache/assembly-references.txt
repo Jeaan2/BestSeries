@@ -1,4 +1,4 @@
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.iOS/bin/iPhoneSimulator/Debug/BestSeries.iOS.exe
+/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries.iOS/bin/iPhoneSimulator/Debug/BestSeries.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/System.dll
@@ -28,7 +28,7 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/System.Xml.Linq.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 /Users/jeancarlodasilva/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.dll
+/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.dll
 /Users/jeancarlodasilva/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/jeancarlodasilva/.nuget/packages/autofac/4.8.1/lib/netstandard1.1/Autofac.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll

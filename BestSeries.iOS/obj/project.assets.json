@@ -1086,11 +1086,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.iOS/BestSeries.iOS.csproj",
+      "projectUniqueName": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries.iOS/BestSeries.iOS.csproj",
       "projectName": "BestSeries.iOS",
-      "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.iOS/BestSeries.iOS.csproj",
+      "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries.iOS/BestSeries.iOS.csproj",
       "packagesPath": "/Users/jeancarlodasilva/.nuget/packages/",
-      "outputPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.iOS/obj",
+      "outputPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries.iOS/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jeancarlodasilva/.config/NuGet/NuGet.Config"
@@ -1104,8 +1104,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/BestSeries.csproj": {
-              "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/BestSeries.csproj"
+            "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.csproj": {
+              "projectPath": "/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries.csproj"
             }
           }
         }
