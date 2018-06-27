@@ -16,8 +16,9 @@ namespace BestSeries.Services
             _api = api;                
         }
 
-        public Task<IEnumerable<Serie>> GetSeriesAsync()
+        public Task<SerieApiResponse> GetSeriesAsync()
         {
+            var a = _api.GetSeriesAsync(AppSettings.ApiKey);
             return _api.GetSeriesAsync(AppSettings.ApiKey);
         }
 

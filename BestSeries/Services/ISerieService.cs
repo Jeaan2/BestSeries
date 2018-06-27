@@ -8,6 +8,6 @@ namespace BestSeries.Services
 {
     public interface ISerieService
     {
-        Task<IEnumerable<Serie>> GetSeriesAsync();
+        Task<SerieApiResponse> GetSeriesAsync();
     }
 }

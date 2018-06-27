@@ -10,6 +10,6 @@ namespace BestSeries.Infrastructure.Api
     public interface IApiRestful
     {
         [Get("/3/tv/popular?api_key={apiKey}")]
-        Task<IEnumerable<Serie>> GetSeriesAsync(string apiKey);
+        Task<SerieApiResponse> GetSeriesAsync(string apiKey);
     }
 }

@@ -17,14 +17,14 @@ namespace BestSeries.ViewModels
 
         public ICommand ItemClickCommand { get; }
 
-        public ObservableCollection<Serie> Items { get; }
+        public ObservableCollection<SerieItemResponse> Items { get; }
 
         public MainViewModel(ISerieService serieService) : base("Best Series")
         {
             _serieService = serieService;
 
-            ItemClickCommand = new Command<Serie>(async (item) => await ItemClickCommandExecuteAsync(item));
-            Items = new ObservableCollection<Serie>();
+            ItemClickCommand = new Command<SerieItemWrapper>(async (item) => await ItemClickCommandExecuteAsync(item));
+            Items = new ObservableCollection<SerieItemResponse>();
         }
 
         public override async Task InitializeAsync(object navigationData)
@@ -36,7 +36,7 @@ namespace BestSeries.ViewModels
             AddItems(result);
         }
 
-        async Task ItemClickCommandExecuteAsync(Serie serie)
+        async Task ItemClickCommandExecuteAsync(SerieItemWrapper serie)
         {
             await NavigationService.NavigateToAsync<DetailsViewModel>(new SerieParameter
             {
@@ -52,10 +52,10 @@ namespace BestSeries.ViewModels
             });
         }
 
-        async Task<IEnumerable<Serie>> GetItemsAsync()
+        async Task<SerieApiResponse> GetItemsAsync()
         => await _serieService.GetSeriesAsync();
 
-        void AddItems(IEnumerable<Serie> items)
-        => items?.ToList()?.ForEach(item => Items.Add(item));
+        void AddItems(SerieApiResponse items)
+        => items.Series?.ToList()?.ForEach(item => Items.Add(item));
     }
 }

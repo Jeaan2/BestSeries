@@ -1,29 +1,24 @@
 ﻿<Properties StartupConfiguration="{607D9DEE-8110-4A9C-B214-1BA18B2F5737}|Default">
   <MonoDevelop.Ide.ItemProperties.BestSeries.Android PreferredExecutionTarget="Android.pixel" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BestSeries/Models/Serie.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BestSeries/Services/ISerieService.cs">
     <Files>
-      <File FileName="BestSeries/Services/Navigation/NavigationService.cs" Line="54" Column="14" />
-      <File FileName="BestSeries/ViewModels/Base/ViewModelLocator.cs" Line="13" Column="25" />
-      <File FileName="BestSeries/App.xaml.cs" Line="15" Column="32" />
-      <File FileName="BestSeries/ViewModels/MainViewModel.cs" Line="24" Column="1" />
-      <File FileName="BestSeries/ViewModels/Base/ViewModelBase.cs" Line="33" Column="1" />
-      <File FileName="BestSeries/ViewModels/DetailsViewModel.cs" Line="28" Column="1" />
+      <File FileName="BestSeries/ViewModels/MainViewModel.cs" Line="56" Column="1" />
       <File FileName="Source Not Available" />
-      <File FileName="BestSeries/Services/ISerieService.cs" Line="1" Column="1" />
-      <File FileName="BestSeries/Services/SerieService.cs" Line="21" Column="1" />
-      <File FileName="BestSeries/Infrastructure/Api/IApiRestful.cs" Line="12" Column="15" />
-      <File FileName="BestSeries/Infrastructure/Helpers/ConstantHelper.cs" Line="6" Column="72" />
-      <File FileName="BestSeries/Models/Serie.cs" Line="24" Column="25" />
+      <File FileName="BestSeries/Models/SerieApiResponse.cs" Line="19" Column="34" />
+      <File FileName="BestSeries/Infrastructure/Api/IApiRestful.cs" Line="16" Column="1" />
+      <File FileName="BestSeries/Services/SerieService.cs" Line="10" Column="35" />
+      <File FileName="BestSeries/Services/ISerieService.cs" Line="11" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/ViewModels/MainViewModel.cs" relfile="BestSeries/ViewModels/MainViewModel.cs" line="24" column="1" />
-      <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/Services/SerieService.cs" relfile="BestSeries/Services/SerieService.cs" line="21" column="1" />
-      <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/Services/SerieService.cs" relfile="BestSeries/Services/SerieService.cs" line="16" column="1" />
       <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/ViewModels/MainViewModel.cs" relfile="BestSeries/ViewModels/MainViewModel.cs" line="16" column="1" />
       <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/ViewModels/MainViewModel.cs" relfile="BestSeries/ViewModels/MainViewModel.cs" line="14" column="1" />
+      <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/ViewModels/MainViewModel.cs" relfile="BestSeries/ViewModels/MainViewModel.cs" line="34" column="1" />
+      <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/Infrastructure/Api/ApiResult.cs" relfile="BestSeries/Infrastructure/Api/ApiResult.cs" line="19" column="1" />
+      <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/ViewModels/MainViewModel.cs" relfile="BestSeries/ViewModels/MainViewModel.cs" line="35" column="1" />
+      <Breakpoint file="/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/ViewModels/MainViewModel.cs" relfile="BestSeries/ViewModels/MainViewModel.cs" line="56" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -52,11 +52,11 @@ namespace BestSeries.Infrastructure.Api
         }
 
         /// <inheritdoc />
-        public virtual Task<IEnumerable<Serie>> GetSeriesAsync(string apiKey)
+        public virtual Task<SerieApiResponse> GetSeriesAsync(string apiKey)
         {
             var arguments = new object[] { apiKey };
             var func = requestBuilder.BuildRestResultFuncForMethod("GetSeriesAsync", new Type[] { typeof(string) });
-            return (Task<IEnumerable<Serie>>)func(Client, arguments);
+            return (Task<SerieApiResponse>)func(Client, arguments);
         }
 
     }
