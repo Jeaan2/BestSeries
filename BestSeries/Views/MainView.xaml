@@ -2,64 +2,58 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    xmlns:behaviors="clr-namespace:BestSeries.Extenders.Behaviors;assembly=BestSeries"
+    xmlns:local="clr-namespace:BestSeries.Extenders.Behaviors;assembly=BestSeries"
     Title="{Binding Title}"
+    BackgroundColor="{StaticResource AppBackgroundColor}"
     x:Class="BestSeries.Views.MainView">
-    <ContentPage.Content>
+     <ContentPage.Content>
         <Grid
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand"
             RowSpacing="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition
-                    Width="*"/>
+                    Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition
-                    Height="*"/>
+                    Height="*" />
             </Grid.RowDefinitions>
             <ListView
                 Grid.Row="0"
                 VerticalOptions="FillAndExpand"
-                HasUnevenRows="true"
+                HasUnevenRows="True"
                 HorizontalOptions="FillAndExpand"
                 ItemsSource="{Binding Items}"
                 SeparatorVisibility="None"
                 CachingStrategy="RecycleElement"
-                behaviors:AttachedItemTappedBehavior.Command="{Binding ItemClickCommand}">
+                local:AttachedItemTappedBehavior.Command="{Binding ItemClickCommand}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid
-                                HorizontalOptions="FillAndExpand">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition
-                                        Width="Auto" />
-                                    <ColumnDefinition
-                                        Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition
-                                        Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <Image
-                                    Grid.Column="0"
-                                    Grid.Row="0"
-                                    VerticalOptions="CenterAndExpand"
-                                    HeightRequest="40"
-                                    WidthRequest="40"
-                                    Source="{Binding PosterPath}" />
-                                <Label
-                                    Grid.Column="1"
-                                    Grid.Row="0"
-                                    VerticalOptions="CenterAndExpand"
-                                    Text="{Binding Name}" />
-                                </Grid>
+                            <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="FillAndExpand"
+                                         Spacing="8">
+                                <Image VerticalOptions="Start"
+                                       HorizontalOptions="Start" 
+                                       WidthRequest="125">
+                                    <Image.Source>
+                                        <UriImageSource Uri="{Binding Backdrop}" CachingEnabled="true"/>
+                                    </Image.Source>
+                                </Image>
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             HorizontalOptions="FillAndExpand"
+                                             Spacing="8"
+                                             Margin="8">
+                                    <Label Text="{Binding Name}" Style="{StaticResource lblTitle}"/>
+                                </StackLayout>
+                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            </Grid>
-        
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

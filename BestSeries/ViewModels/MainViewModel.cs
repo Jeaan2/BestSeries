@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -41,12 +40,12 @@ namespace BestSeries.ViewModels
             await NavigationService.NavigateToAsync<DetailsViewModel>(new SerieParameter
             {
                 Id = serie.Id,
-                BackdropPath = serie.BackdropPath,
+                Backdrop = serie.Backdrop,
                 FirstAirDate = serie.FirstAirDate,
                 Name = serie.Name,
                 Overview = serie.Overview,
                 Popularity = serie.Popularity,
-                PosterPath = serie.PosterPath,
+                Poster = serie.Poster,
                 VoteAverage = serie.VoteAverage
 
             });

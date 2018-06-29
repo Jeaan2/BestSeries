@@ -1,5 +1,34 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BestSeries.Views.DetailsView">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BestSeries.Views.DetailsView"
+             BackgroundColor="{StaticResource AppBackgroundColor}"
+             Title="{Binding Title}">
     <ContentPage.Content>
+        <ScrollView HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+            <Grid>
+                <StackLayout
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Spacing="8" Margin="0,0,0,8">
+            <Image Margin="0"
+                   HorizontalOptions="FillAndExpand"
+                   HeightRequest="235"
+                   VerticalOptions="Start"
+                   Aspect="AspectFill">
+                <Image.Source>
+                    <UriImageSource Uri="{Binding Item.Backdrop}" CachingEnabled="true"/>
+                </Image.Source>                    
+            </Image>
+
+                    <Label Margin="16, 0" Text="{Binding Item.Name}" Style="{StaticResource lblTitle}"/>
+
+                    <Label Margin="16, 0" Text="{Binding Item.FirstAirDate}" Style="{StaticResource lblDefault}"/>
+
+                    <Label Margin="16,0" Text="{Binding Item.Overview}" Style="{StaticResource lblDefault}"/>
+            </StackLayout>
+        </Grid>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>

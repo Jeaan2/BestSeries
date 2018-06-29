@@ -28,5 +28,15 @@ namespace BestSeries.Models
 
         [JsonProperty("vote_average")]
         public double VoteAverage { get; set; }
+
+        public string Backdrop 
+        {
+            get { return $"{AppSettings.ImageUrlPref}{BackdropPath}"; }
+        }
+
+        public string Poster 
+        {
+            get { return $"{AppSettings.ImageUrlPref}{PosterPath}"; }
+        }
     }
 }

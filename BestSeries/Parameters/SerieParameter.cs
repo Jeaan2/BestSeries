@@ -14,7 +14,11 @@ namespace BestSeries.Parameters
 
         public string PosterPath { get; set; }
 
+        public string Poster { get; set; }
+
         public string BackdropPath { get; set; }
+
+        public string Backdrop { get; set; }
 
         public DateTime FirstAirDate { get; set; }
 
