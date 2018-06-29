@@ -2,7 +2,7 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    xmlns:local="clr-namespace:BestSeries.Extenders.Behaviors;assembly=BestSeries"
+    xmlns:local="clr-namespace:BestSeries.Behaviors"
     Title="{Binding Title}"
     BackgroundColor="{StaticResource AppBackgroundColor}"
     x:Class="BestSeries.Views.MainView">
@@ -16,7 +16,7 @@
                     Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition
+                <RowDefinition  
                     Height="*" />
             </Grid.RowDefinitions>
             <ListView

@@ -1,14 +1,7 @@
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.deps.json
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.dll
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.pdb
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.csproj.CoreCompileInputs.cache
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.AssemblyInfoInputs.cache
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.AssemblyInfo.cs
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.dll
-/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.pdb
 /Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.deps.json
 /Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.dll
 /Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/bin/Debug/netstandard2.0/BestSeries.pdb
+/Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.csprojResolveAssemblyReference.cache
 /Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.csproj.CoreCompileInputs.cache
 /Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.AssemblyInfoInputs.cache
 /Users/jeancarlodasilva/Projetos/BestSeries/BestSeries/BestSeries/obj/Debug/netstandard2.0/BestSeries.AssemblyInfo.cs

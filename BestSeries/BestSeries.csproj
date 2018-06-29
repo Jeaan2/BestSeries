@@ -25,7 +25,7 @@
     <Folder Include="ViewModels\Base\" />
     <Folder Include="Models\Base\" />
     <Folder Include="Extenders\Extensions\" />
-    <Folder Include="Extenders\Behaviors\" />
+    <Folder Include="Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Infrastructure\Api.cs" />
