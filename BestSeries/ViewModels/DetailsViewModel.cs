@@ -52,12 +52,20 @@ namespace BestSeries.ViewModels
             set { _voteAverage = value; OnPropertyChanged(); }
         }
 
+        string _releaseDate;
+        public string ReleaseDate
+        {
+            get { return _releaseDate; }
+            set { _releaseDate = value; OnPropertyChanged(); }
+        }
+
         public override async Task InitializeAsync(object parameter)
         {
             var serie = (parameter as SerieParameter);
 
             BackdropPath = serie.Backdrop;
             FirstAirDate = serie.FirstAirDate.ToString("d");
+            ReleaseDate = serie.ReleaseDate;
             Name = serie.Name;
             Overview = serie.Overview;
 
