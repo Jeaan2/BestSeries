@@ -8,7 +8,7 @@ namespace BestSeries.Parameters
 
         public string Name { get; set; }
 
-        public string Popularity { get; set; }
+        public decimal Popularity { get; set; }
 
         public string Overview { get; set; }
 
@@ -21,6 +21,10 @@ namespace BestSeries.Parameters
         public string Backdrop { get; set; }
 
         public DateTime FirstAirDate { get; set; }
+
+        public string ReleaseDate { get; set; }
+
+        public string PopularityRate { get; set; }
 
         public double VoteAverage { get; set; }
     }

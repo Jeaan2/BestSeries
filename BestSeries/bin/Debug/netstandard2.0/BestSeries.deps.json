@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "2302ec42c5f8511c3cf237eaf5ac2aefeac890ac"
+    "signature": "9b747161e6c27437c1efcea0960d23640c9931ac"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,7 +11,7 @@
         "dependencies": {
           "Autofac": "4.8.1",
           "NETStandard.Library": "2.0.1",
-          "Refit": "4.6.16",
+          "Refit": "4.5.6",
           "Xamarin.Forms": "3.0.0.482510"
         },
         "runtime": {
@@ -39,7 +39,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Refit/4.6.16": {
+      "Refit/4.5.6": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
         },
@@ -111,12 +111,12 @@
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
-    "Refit/4.6.16": {
+    "Refit/4.5.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jqnNZfkIGzfsrAMXLTHoSzbVfIIjYmUJJpgaWZg/VP7CTcqxln3fWWN6Ji6UwfXoMS6HdanGvkAjJqNyvMxCTw==",
-      "path": "refit/4.6.16",
-      "hashPath": "refit.4.6.16.nupkg.sha512"
+      "sha512": "sha512-YJCKmbt/scLyuT25zvONFr/1GJJwEOV44ojJ85Etys1EvwB8O79CZZTkBafRVO1BFgVdC1VDmI0hZNy6v3CoLg==",
+      "path": "refit/4.5.6",
+      "hashPath": "refit.4.5.6.nupkg.sha512"
     },
     "System.ComponentModel/4.0.1": {
       "type": "package",

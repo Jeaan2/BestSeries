@@ -24,7 +24,7 @@
 
                     <Label Margin="16, 0" Text="{Binding Item.Name}" Style="{StaticResource lblTitle}"/>
 
-                    <Label Margin="16, 0" Text="{Binding Item.FirstAirDate}" Style="{StaticResource lblDefault}"/>
+                    <Label Margin="16, 0" Text="{Binding Item.ReleaseDate}" Style="{StaticResource lblDefault}"/>
 
                     <Label Margin="16,0" Text="{Binding Item.Overview}" Style="{StaticResource lblDefault}"/>
             </StackLayout>

@@ -41,10 +41,10 @@ namespace BestSeries.ViewModels
             {
                 Id = serie.Id,
                 Backdrop = serie.Backdrop,
-                FirstAirDate = serie.FirstAirDate,
+                ReleaseDate = serie.ReleaseDate,
                 Name = serie.Name,
                 Overview = serie.Overview,
-                Popularity = serie.Popularity,
+                PopularityRate = serie.PopularityRate,
                 Poster = serie.Poster,
                 VoteAverage = serie.VoteAverage
 

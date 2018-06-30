@@ -57,10 +57,10 @@ namespace BestSeries.ViewModels
             var serie = (parameter as SerieParameter);
 
             BackdropPath = serie.BackdropPath;
-            FirstAirDate = serie.FirstAirDate.ToString();
+            FirstAirDate = serie.FirstAirDate.ToString("d");
             Name = serie.Name;
             Overview = serie.Overview;
-            Popularity = serie.Popularity;
+
             VoteAverage = serie.VoteAverage.ToString("0.0f");
 
             await base.InitializeAsync(parameter);

@@ -160,7 +160,7 @@
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r=/Users/jeancarlodasilva/.nuget/packages/autofac/4.8.1/lib/netstandard1.1/Autofac.dll \
 	-r=/Users/jeancarlodasilva/.nuget/packages/newtonsoft.json/11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll \
-	-r=/Users/jeancarlodasilva/.nuget/packages/refit/4.6.16/lib/netstandard2.0/Refit.dll \
+	-r=/Users/jeancarlodasilva/.nuget/packages/refit/4.5.6/lib/netstandard2.0/Refit.dll \
 	-r=/Users/jeancarlodasilva/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r=/Users/jeancarlodasilva/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r=/Users/jeancarlodasilva/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \

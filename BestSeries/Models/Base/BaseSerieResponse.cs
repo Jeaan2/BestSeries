@@ -12,7 +12,7 @@ namespace BestSeries.Models
         public string Name { get; set; }
 
         [JsonProperty("popularity")]
-        public string Popularity { get; set; }
+        public decimal Popularity { get; set; }
 
         [JsonProperty("overview")]
         public string Overview { get; set; }
@@ -37,6 +37,16 @@ namespace BestSeries.Models
         public string Poster 
         {
             get { return $"{AppSettings.ImageUrlPref}{PosterPath}"; }
+        }
+
+        public string ReleaseDate
+        {
+            get { return FirstAirDate.ToString("d"); }
+        }
+
+        public string PopularityRate
+        {
+            get { return Popularity.ToString("0.00"); }
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace BestSeries.Behaviors
+namespace BestSeries
 {
     public static class AttachedItemTappedBehavior
     {
@@ -17,15 +17,15 @@ namespace BestSeries.Behaviors
                 propertyChanged: OnItemTappedChanged);
 
         private static void OnItemTappedChanged(BindableObject bindable, object oldValue, object newValue)
-        => (bindable as ListView).ItemTapped += (sender, e) => 
-        {
-            var control = sender as ListView;
-            var command = (ICommand)control.GetValue(CommandProperty);
+            => (bindable as ListView).ItemTapped += (sender, e) =>
+            {
+                var control = sender as ListView;
+                var command = (ICommand)control.GetValue(CommandProperty);
 
-            if (command != null && command.CanExecute(e.Item))
-                command.Execute(e.Item);
+                if (command != null && command.CanExecute(e.Item))
+                    command.Execute(e.Item);
 
-            control.SelectedItem = null;
-        };
+                control.SelectedItem = null;
+            };
     }
 }

@@ -22,6 +22,10 @@ namespace BestSeries.Models.Base
 
         public DateTime FirstAirDate { get; set; }
 
+        public string ReleaseDate { get; set; }
+
+        public string PopularityRate { get; set; }
+
         public double VoteAverage { get; set; }
     }
 }

@@ -47,4 +47,4 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Threading.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Runtime.Extensions.dll
 /Users/jeancarlodasilva/.nuget/packages/newtonsoft.json/11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll
-/Users/jeancarlodasilva/.nuget/packages/refit/4.6.16/lib/netstandard2.0/Refit.dll
+/Users/jeancarlodasilva/.nuget/packages/refit/4.5.6/lib/netstandard2.0/Refit.dll

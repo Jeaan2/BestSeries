@@ -2,58 +2,45 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    xmlns:local="clr-namespace:BestSeries.Behaviors"
+    xmlns:local="clr-namespace:BestSeries"
     Title="{Binding Title}"
     BackgroundColor="{StaticResource AppBackgroundColor}"
     x:Class="BestSeries.Views.MainView">
      <ContentPage.Content>
-        <Grid
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand"
-            RowSpacing="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition
-                    Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition  
-                    Height="*" />
-            </Grid.RowDefinitions>
-            <ListView
-                Grid.Row="0"
-                VerticalOptions="FillAndExpand"
+            <ListView VerticalOptions="FillAndExpand" 
                 HasUnevenRows="True"
-                HorizontalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"   
                 ItemsSource="{Binding Items}"
-                SeparatorVisibility="None"
+                SeparatorColor="{StaticResource ListSeparatorColor}"
                 CachingStrategy="RecycleElement"
                 local:AttachedItemTappedBehavior.Command="{Binding ItemClickCommand}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal"
-                                         VerticalOptions="FillAndExpand"
-                                         HorizontalOptions="FillAndExpand"
-                                         Spacing="8">
-                                <Image VerticalOptions="Start"
-                                       HorizontalOptions="Start" 
-                                       WidthRequest="125">
-                                    <Image.Source>
-                                        <UriImageSource Uri="{Binding Backdrop}" CachingEnabled="true"/>
-                                    </Image.Source>
-                                </Image>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" 
+                                 HorizontalOptions="FillAndExpand" Spacing="8">
 
-                                <StackLayout VerticalOptions="FillAndExpand"
-                                             HorizontalOptions="FillAndExpand"
-                                             Spacing="8"
-                                             Margin="8">
-                                    <Label Text="{Binding Name}" Style="{StaticResource lblTitle}"/>
-                                </StackLayout>
-                             </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Grid>
+                            <Image VerticalOptions="Start" HorizontalOptions="Start" HeightRequest="125" >
+                                <Image.Source>
+                                    <UriImageSource Uri="{Binding Poster}" CachingEnabled="true"/>
+                                </Image.Source>
+                            </Image>
+
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="8" Margin="8">
+                                <Label Text="{Binding Name}" Style="{StaticResource lblTitle}"/>
+                                <Label Text="{Binding ReleaseDate, StringFormat='{0:d}'}" Style="{StaticResource lblDefault}"/>
+                                <Label Text="{Binding PopularityRate}" Style="{StaticResource lblDefault}"/>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.Footer>
+                <ActivityIndicator IsVisible="{Binding IsBusy}"
+                                       IsRunning="{Binding IsBusy}"
+                                       Margin="16"/>
+            </ListView.Footer>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
