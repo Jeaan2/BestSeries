@@ -22,7 +22,7 @@ namespace BestSeries.ViewModels
         {
             _serieService = serieService;
 
-            ItemClickCommand = new Command<SerieItemWrapper>(async (item) => await ItemClickCommandExecuteAsync(item));
+            ItemClickCommand = new Command<SerieItemResponse>(async (item) => await ItemClickCommandExecuteAsync(item));
             Items = new ObservableCollection<SerieItemResponse>();
         }
 
@@ -35,7 +35,13 @@ namespace BestSeries.ViewModels
             AddItems(result);
         }
 
-        async Task ItemClickCommandExecuteAsync(SerieItemWrapper serie)
+        async Task<SerieApiResponse> GetItemsAsync()
+            => await _serieService.GetSeriesAsync();
+
+        void AddItems(SerieApiResponse items)
+            => items.Series?.ToList()?.ForEach(item => Items.Add(item));
+
+        async Task ItemClickCommandExecuteAsync(SerieItemResponse serie)
         {
             await NavigationService.NavigateToAsync<DetailsViewModel>(new SerieParameter
             {
@@ -51,10 +57,6 @@ namespace BestSeries.ViewModels
             });
         }
 
-        async Task<SerieApiResponse> GetItemsAsync()
-        => await _serieService.GetSeriesAsync();
 
-        void AddItems(SerieApiResponse items)
-        => items.Series?.ToList()?.ForEach(item => Items.Add(item));
     }
 }

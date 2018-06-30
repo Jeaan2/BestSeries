@@ -56,7 +56,7 @@ namespace BestSeries.ViewModels
         {
             var serie = (parameter as SerieParameter);
 
-            BackdropPath = serie.BackdropPath;
+            BackdropPath = serie.Backdrop;
             FirstAirDate = serie.FirstAirDate.ToString("d");
             Name = serie.Name;
             Overview = serie.Overview;

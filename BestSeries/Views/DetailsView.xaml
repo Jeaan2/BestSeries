@@ -18,15 +18,15 @@
                    VerticalOptions="Start"
                    Aspect="AspectFill">
                 <Image.Source>
-                    <UriImageSource Uri="{Binding Item.Backdrop}" CachingEnabled="true"/>
+                    <UriImageSource Uri="{Binding BackdropPath}" CachingEnabled="true"/>
                 </Image.Source>                    
             </Image>
 
-                    <Label Margin="16, 0" Text="{Binding Item.Name}" Style="{StaticResource lblTitle}"/>
+                    <Label Margin="16, 0" Text="{Binding Name}" Style="{StaticResource lblTitle}"/>
 
-                    <Label Margin="16, 0" Text="{Binding Item.ReleaseDate}" Style="{StaticResource lblDefault}"/>
+                    <Label Margin="16, 0" Text="{Binding ReleaseDate}" Style="{StaticResource lblDefault}"/>
 
-                    <Label Margin="16,0" Text="{Binding Item.Overview}" Style="{StaticResource lblDefault}"/>
+                    <Label Margin="16,0" Text="{Binding Overview}" Style="{StaticResource lblDefault}"/>
             </StackLayout>
         </Grid>
             </ScrollView>
